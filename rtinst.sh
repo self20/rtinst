@@ -14,7 +14,7 @@ rtorrentrel='0.9.6'
 libtorrentrel='0.13.6'
 rtorrentloc='http://rtorrent.net/downloads/rtorrent-'$rtorrentrel'.tar.gz'
 libtorrentloc='http://rtorrent.net/downloads/libtorrent-'$libtorrentrel'.tar.gz'
-xmlrpcloc='http://bonobox.net/script/xmlrpc-c.tar.gz'
+xmlrpcloc='https://github.com/mirror/xmlrpc-c'
 
 BLOB=master
 RTDIR=https://raw.githubusercontent.com/self20/rtinst/$BLOB/scripts
@@ -426,11 +426,11 @@ if [ $install_rt = 0 ]; then
   cd source
   echo "Downloading rtorrent source files" | tee -a $logfile
 
-  svn co $xmlrpcloc xmlrpc  >> $logfile 2>&1 || error_exit "Unable to download xmlrpc source files from https://svn.code.sf.net/p/xmlrpc-c/code/stable"
+  git clone $xmlrpcloc xmlrpc  >> $logfile 2>&1 || error_exit "Unable to download xmlrpc source files from https://svn.code.sf.net/p/xmlrpc-c/code/stable"
   curl -# $libtorrentloc | tar xz  >> $logfile 2>&1 || error_exit "Unable to download libtorrent source files from http://libtorrent.rakshasa.no/downloads"
   curl -# $rtorrentloc | tar xz  >> $logfile 2>&1 || error_exit "Unable to download rtorrent source files from http://libtorrent.rakshasa.no/downloads"
 
-  cd xmlrpc
+  cd xmlrpc/stable
   echo "Installing xmlrpc" | tee -a $logfile
   ./configure --prefix=/usr --enable-libxml2-backend --disable-libwww-client --disable-wininet-client --disable-abyss-server --disable-cgi-server >> $logfile 2>&1
   make >> $logfile 2>&1
