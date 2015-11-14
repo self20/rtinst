@@ -2,7 +2,7 @@
 
 ######################################################################
 #
-#  Copyright (c) 2015 arakasi72 (https://github.com/arakasi72)
+#  Copyright (c) 2015 self20 (https://github.com/self20)
 #
 #  --> Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
 #
@@ -17,7 +17,7 @@ libtorrentloc='http://rtorrent.net/downloads/libtorrent-'$libtorrentrel'.tar.gz'
 xmlrpcloc='https://svn.code.sf.net/p/xmlrpc-c/code/stable'
 
 BLOB=master
-RTDIR=https://raw.githubusercontent.com/arakasi72/rtinst/$BLOB/scripts
+RTDIR=https://raw.githubusercontent.com/self20/rtinst/$BLOB/scripts
 
 FULLREL=$(cat /etc/issue.net)
 OSNAME=$(cat /etc/issue.net | cut -d' ' -f1)
@@ -462,7 +462,7 @@ echo "Configuring rtorrent" | tee -a $logfile
 cd $home
 
 mkdir -p rtorrent/.session
-mkdir -p rtorrent/downloads
+mkdir -p rtorrent/descargas
 mkdir -p rtorrent/watch
 
 

@@ -3,7 +3,7 @@
 
 If it has been some time since you did an update you may need to manually download and run rtgetscripts:
 
-	wget --no-check-certificate https://raw.githubusercontent.com/arakasi72/rtinst/master/scripts/rtgetscripts
+	wget --no-check-certificate https://raw.githubusercontent.com/self20/rtinst/master/scripts/rtgetscripts
 	sudo bash rtgetscripts
 	
 ======
@@ -38,7 +38,7 @@ Run the script from root, or if you have a sudo user already set up you can run 
 
 First download the script:
 
-	wget --no-check-certificate https://raw.githubusercontent.com/arakasi72/rtinst/master/rtinst.sh
+	wget --no-check-certificate https://raw.githubusercontent.com/self20/rtinst/master/rtinst.sh
 
 and then to run it:
 
@@ -77,7 +77,7 @@ A number of additional scripts will be installed that carry out a variety of use
 
 If you get an error run the following, you will only need to this once, and subsequently the prior command will work
 
-	wget --no-check-certificate https://raw.githubusercontent.com/arakasi72/rtinst/master/scripts/rtgetscripts
+	wget --no-check-certificate https://raw.githubusercontent.com/self20/rtinst/master/scripts/rtgetscripts
 	sudo bash rtgetscripts
 	
 All the scripts are downloaded to /usr/local/bin
@@ -173,7 +173,7 @@ If you use the option -i it will switch to irssi
 
 -------------------------------------------------------------------------
 
- Copyright (c) 2015 arakasi72 (https://github.com/arakasi72)
+ Copyright (c) 2015 self20 (https://github.com/self20)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: 
 

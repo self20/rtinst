@@ -2,7 +2,7 @@
 
 ######################################################################
 #
-#  Copyright (c) 2015 arakasi72 (https://github.com/arakasi72)
+#  Copyright (c) 2015 self20 (https://github.com/self20)
 #
 #  --> Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
 #
@@ -11,7 +11,7 @@
 PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/sbin
 
 BLOB=master
-RTDIR=https://raw.githubusercontent.com/arakasi72/rtinst/$BLOB
+RTDIR=https://raw.githubusercontent.com/self20/rtinst/$BLOB
 
 check_url() {
   if [[ `wget -S --spider $1  2>&1 | grep 'HTTP/1.1 200 OK'` ]]; then echo "true"; fi

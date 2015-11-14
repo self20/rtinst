@@ -2,7 +2,7 @@
 
 ######################################################################
 #
-#  Copyright (c) 2015 arakasi72 (https://github.com/arakasi72)
+#  Copyright (c) 2015 self20 (https://github.com/self20)
 #
 #  --> Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
 #
@@ -43,7 +43,7 @@ fi
 clear
 
 echo "For more information go to:"
-echo "https://github.com/arakasi72/rtinst/blob/master/README.md"
+echo "https://github.com/self20/rtinst/blob/master/README.md"
 echo "Select from the following options:"
 echo "1.) rtgetscripts - update the rtinst scripts"
 echo "2.) rtadduser - add new user"
