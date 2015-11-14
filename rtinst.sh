@@ -232,7 +232,7 @@ if [ $OSNAME = "Debian" ]; then
   cp $home/rar/unrar /bin/unrar
   rm -r $home/rar
 elif [ $OSNAME = "Ubuntu" ]; then
-  apt-get -y install unrar  >> $logfile 2>&1
+  apt-get -y install unrar-free  >> $logfile 2>&1
 fi
 
 #install ffmpeg
