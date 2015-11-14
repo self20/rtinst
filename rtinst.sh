@@ -10,8 +10,8 @@
 
 PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/sbin
 
-rtorrentrel='0.9.6'
-libtorrentrel='0.13.6'
+rtorrentrel='0.9.4'
+libtorrentrel='0.13.4'
 rtorrentloc='http://rtorrent.net/downloads/rtorrent-'$rtorrentrel'.tar.gz'
 libtorrentloc='http://rtorrent.net/downloads/libtorrent-'$libtorrentrel'.tar.gz'
 xmlrpcloc='https://github.com/mirror/xmlrpc-c'
@@ -436,7 +436,7 @@ if [ $install_rt = 0 ]; then
   make >> $logfile 2>&1
   make install >> $logfile 2>&1
 
-  cd ../libtorrent-$libtorrentrel
+  cd ../../libtorrent-$libtorrentrel
   echo "Installing libtorrent" | tee -a $logfile
   ./autogen.sh >> $logfile 2>&1
   if [ $OSNAME = "Raspbian" ]; then
@@ -447,7 +447,7 @@ if [ $install_rt = 0 ]; then
   make -j2 >> $logfile 2>&1
   make install >> $logfile 2>&1
 
-  cd ../rtorrent-$rtorrentrel
+  cd ../../rtorrent-$rtorrentrel
   echo "Installing rtorrent" | tee -a $logfile
   ./autogen.sh >> $logfile 2>&1
   ./configure --prefix=/usr --with-xmlrpc-c >> $logfile 2>&1
