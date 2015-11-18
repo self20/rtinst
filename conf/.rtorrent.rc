@@ -15,7 +15,7 @@ download_rate = 0
 upload_rate = 0
 
 # Directories
-directory = /home/<user name>/rtorrent/downloads
+directory = /home/<user name>/rtorrent/descargas
 session = /home/<user name>/rtorrent/.session
 schedule = watch_directory,5,5,load_start=/home/<user name>/rtorrent/watch/*.torrent
 
